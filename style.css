@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.top-bar{
+    width: 100%;
+    font-size: 13px;
+    margin: 0px;
+    padding: 10px 0px;
+    font-family: ApercuPro-Light, 'Source Sans Pro', Helvetica, sans-serif;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    letter-spacing: normal;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    backface-visibility: hidden;
+    flex-shrink: 0;
+    height: 35px;
+    position: relative;
+    transition-property: transform;
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 500;
+    line-height: 15.6px;
+    box-sizing: border-box;
+    font-style: normal;
+    background-color: #98a88d;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.fss{
+    font-size: 0.8rem;
+}
+
+
+
+li{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-left > ul,
+.nav-right> ul{
+    gap: 1.5rem;
+    height: 100%;
+    margin-block: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+nav{
+    padding: 0.7rem 1.7rem;
+}
+
+.nav-logo{
+    width: 22%;
+    font-size: 2rem;
+}
+
+.nav-right> ul{
+    gap: 3.5rem;
+}
+
+nav{
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    background: transparent;
+}
+
+.font-black{
+    color: black;
+}
+
+.font-white{
+    color: white;
+    text-decoration: none;
+}
+
+.font-white:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-menu{
+    padding: 3rem 2rem !important;
+    top: 1rem!important;
+}
+
+.dropdown-menu > ul > li > a{
+    font-size: 0.8rem!important;
+}
+
+.carousel{
+    top: -4.369rem;
+}
