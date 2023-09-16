@@ -645,3 +645,27 @@ nav {
 .style-48 {
   box-sizing: border-box;
 }
+
+
+/* Add a transition property to smoothly transition background and color changes */
+nav {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-scrolled {
+  background-color: white !important;
+  color: black !important;
+  /* Add any other styles you want to apply when scrolled */
+}
+
+/* Change text color for links with class font-white inside the navbar */
+.navbar-scrolled .font-white {
+  color: black !important;
+  /* You can add other styles if needed */
+}
+With these CSS rules, when you scroll and the navbar switches to the .navbar-scrolled state, it will not only change the background color but also change the text color of elements with the class font-white to black inside the navbar. The !important declaration ensures that these styles override any existing styles. Adjust the transition duration and other styles as needed to achieve your desired effect.
+
+
+
+
+
