@@ -1,132 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nack.life</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css"
+      integrity="sha384-DMJvgMnE5fATLrqg0r2a6sXV4wB2xIv4XcBEUK6eyIab9dxtN3bqXG/49XYySpW6L"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nack.life</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-</head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
 
-<body>
-  <div class="top-bar" role="group" aria-label="1 / 1" data-swiper-slide-index="0">
-    Get 10% off on your first order! Use the code 'Welcome10'.
-  </div>
-    
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body class="body">
+    <div
+      class="top-bar"
+      role="group"
+      aria-label="1 / 1"
+      data-swiper-slide-index="0"
+    >
+      Get 10% off on your first order! Use the code 'Welcome10'.
+    </div>
+
     <nav class="d-flex align-center justify-content-between">
-
       <div class="nav-left fss">
-       <ul >
-        <li><a class="font-white" href="">Shop Now</a></li>
-        <li><a class="font-white" href="">Health Experts</a></li>
-        <div class="dropdown show">
-          <a class="dropdown-toggle font-white" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Naked Way
-          </a>
-        
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item " href="#">Action</a>
-            <a class="dropdown-item " href="#">Another action</a>
-            <a class="dropdown-item " href="#">Something else here</a>
+        <ul>
+          <li><a class="font-white" href="">Shop Now</a></li>
+          <li><a class="font-white" href="">Health Experts</a></li>
+          <div class="dropdown show">
+            <a
+              class="dropdown-toggle font-white"
+              href="#"
+              role="button"
+              id="dropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Naked Way
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
           </div>
-        </div>
-        <div class="dropdown show">
-          <a class="dropdown-toggle font-white" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-           Nack journals
-          </a>
-        
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown show">
+            <a
+              class="dropdown-toggle font-white"
+              href="#"
+              role="button"
+              id="dropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Nack journals
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
           </div>
-        </div>
-       </ul>
-        
+        </ul>
       </div>
-      
+
       <div class="nav-logo">
         <a class="font-white" href="">nack</a>
       </div>
 
       <div class="nav-right">
         <ul class="d-flex fss justify-content-between align-center">
-            <li><a class="font-white">About us</a></li>
-            <li><a class="font-white"><i class="fa-regular fa-user"></i></a></li>
-            <li><a class="font-white"><i class="fa-solid fa-cart-shopping"></i></a></li>
+          <li><a class="font-white">About us</a></li>
+          <li>
+            <a class="font-white"><i class="fa-regular fa-user"></i></a>
+          </li>
+          <li>
+            <a class="font-white"><i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
         </ul>
       </div>
     </nav>
 
-  <section id="hero">
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <section id="hero">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-ride="carousel"
+      >
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="https://nack.life/cdn/shop/files/desktopbanner_1280x.jpg?v=1692342864" alt="First slide">
+            <img
+              class="d-block w-100"
+              src="https://nack.life/cdn/shop/files/desktopbanner_1280x.jpg?v=1692342864"
+              alt="First slide"
+            />
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="https://nack.life/cdn/shop/files/Carousel_Web_Banner_img-01_1280x.jpg?v=1684483241" alt="Second slide">
+            <img
+              class="d-block w-100"
+              src="https://nack.life/cdn/shop/files/Carousel_Web_Banner_img-01_1280x.jpg?v=1684483241"
+              alt="Second slide"
+            />
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="https://nack.life/cdn/shop/files/Yoga_Day_Journal_Desktop_1280x.jpg?v=1689658304" alt="Third slide">
+            <img
+              class="d-block w-100"
+              src="https://nack.life/cdn/shop/files/Yoga_Day_Journal_Desktop_1280x.jpg?v=1689658304"
+              alt="Third slide"
+            />
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="prev"
+        >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="next"
+        >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
       </div>
-  </section>
+    </section>
 
-  <section id="hero2">
-    <p>HONEST. CLEAN. NATURAL.</p>
-    <h3>Choose Your Favourite</h3>
-    <h3>Choose Your Favourite</h3>
-    <h3>Choose Your Favourite</h3>
-    <h3>Choose Your Favourite</h3>
-    <h3>Choose Your Favourite</h3>
-    <div class="corousel"></div>
-  </section>
+    <section id="hero2" class="text-center">
+      <div class="style-0">
+        <div class="style-1">
+          <div class="style-2">
+            <h6 class="style-3">HONEST. CLEAN. NATURAL.</h6>
+            <h2 class="style-4">Choose Your Favourite</h2>
+          </div>
 
-  <section id="body">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </section>
+          <div
+            class="style-5"
+            data-flickity='{
+            "cellAlign": "center",
+            "contain": true,
+            "prevNextButtons": true,
+            "pageDots": false,
+            "wrapAround": true,
+            "autoPlay": true,
+            "pauseAutoPlayOnHover": true
+          }'
+            tabindex="0"
+          >
+            <div class="style-6">
+              <div class="style-7">
+                <div class="style-8" aria-hidden="true">
+                  <a
+                    href="/products/whey-protein-chocolate-with-pink-himalayan-salt"
+                    class="style-9"
+                  >
+                    <div class="style-10">
+                      <div class="style-11">
+                        <img
+                          src="//nack.life/cdn/shop/files/choose_your_fav_410x.jpg?v=1682330570"
+                          alt="whey protein"
+                          class="style-12"
+                        />
+                      </div>
+                      <div class="style-13">
+                        <h6 class="style-14">whey protein</h6>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="style-15" aria-hidden="true">
+                  <a
+                    href="/products/plant-protein-powder-500g-unflavoured"
+                    class="style-16"
+                  >
+                    <div class="style-17">
+                      <div class="style-18">
+                        <img
+                          src="//nack.life/cdn/shop/files/vegan-plant-protein-powder-nack-india-min_750x_1000x_9fe870d1-dcb5-439f-a696-2219a36f7fca_410x.webp?v=1656932664"
+                          alt="plant protein"
+                          class="style-19"
+                        />
+                      </div>
+                      <div class="style-20">
+                        <h6 class="style-21">plant protein</h6>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="style-22" aria-hidden="true">
+                  <a href="/products/natural-astaxanthin-4-mg" class="style-23">
+                    <div class="style-24">
+                      <div class="style-25">
+                        <img
+                          src="//nack.life/cdn/shop/files/nack-astaxanthin-antioxidant-immunity-boost-1-min_410x.jpg?v=1656933817"
+                          alt="immunity boost"
+                          class="style-26"
+                        />
+                      </div>
+                      <div class="style-27">
+                        <h6 class="style-28">immunity boost</h6>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="style-29" aria-hidden="true">
+                  <a href="/products/the-strong-kit" class="style-30">
+                    <div class="style-31">
+                      <div class="style-32">
+                        <img
+                          src="//nack.life/cdn/shop/files/tsk_home_page_1_410x.jpg?v=1680075128"
+                          alt="strong kit"
+                          class="style-33"
+                        />
+                      </div>
+                      <div class="style-34">
+                        <h6 class="style-35">strong kit</h6>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="style-36">
+                  <a
+                    href="https://nack.life/products/eaa-electrolytes-black-grape"
+                    class="style-37"
+                  >
+                    <div class="style-38">
+                      <div class="style-39">
+                        <img
+                          src="//nack.life/cdn/shop/files/choose_your_fav_9c6ba076-3ac3-4bb3-ab24-e03329ecbf64_410x.jpg?v=1692271535"
+                          alt="EAA+Electrolytes"
+                          class="style-40"
+                        />
+                      </div>
+                      <div class="style-41">
+                        <h6 class="style-42">EAA+Electrolytes</h6>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <button class="style-43" type="button" aria-label="Previous">
+              <svg class="style-44" viewBox="0 0 100 100">
+                <path
+                  d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"
+                  class="style-45"
+                ></path>
+              </svg></button
+            ><button class="style-46" type="button" aria-label="Next">
+              <svg class="style-47" viewBox="0 0 100 100">
+                <path
+                  d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"
+                  class="style-48"
+                  transform="translate(100, 100) rotate(180) "
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section id="end-body">
-    <div></div>
-  </section>
+    <section id="body">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
 
-  <section id="pre-footer">
-    <div></div>
-    <div></div>
-    <div></div>
-  </section>
+    <section id="end-body">
+      <div></div>
+    </section>
 
-  <footer></footer>
+    <section id="pre-footer">
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
 
-  <script src="script.js"></script>
-</body>
-
+    <footer></footer>
+  </body>
 </html>
