@@ -661,7 +661,10 @@ nav {
   color: black !important;
 }
 
+#body{
+  padding: 0 9rem;
+}
 
-
-
-
+.photos{
+  margin-top: 4rem;
+}
